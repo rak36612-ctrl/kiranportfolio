@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran B L - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Kiran B L</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="resumeBtn" class="resume-btn">Resume</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="profile.jpeg" alt="Kiran B L" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px;"><br><h1>Hi, I'm Kiran B L</h1>
+            <p>Passionate CS student building real-world solutions through code.</p>
+            <button id="heroResumeBtn" class="cta-button">Download Resume</button>
+            <a href="resume.pdf" target="_blank" class="cta-button" style="margin-left: 10px; text-decoration: none; display: inline-block;">View Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate CS student with a strong foundation in data structures, full-stack development, and cloud computing. I love building real-world solutions through code.</p>
+            <div class="skills">
+                <div class="skill-card">
+                    <span class="icon">&#60;/&#62;</span>
+                    <h3>Python</h3>
+                    <p>Scripting, Automation, Data</p>
+                </div>
+                <div class="skill-card">
+                    <span class="icon">&#128187;</span>
+                    <h3>Java + DSA</h3>
+                    <p>Core Java, OOP, Algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <span class="icon">&#128451;</span>
+                    <h3>Java Full Stack</h3>
+                    <p>Spring Boot, REST, SQL</p>
+                </div>
+                <div class="skill-card">
+                    <span class="icon">&#9788;</span>
+                    <h3>AWS Cloud</h3>
+                    <p>EC2, S3, IAM, Lambda (Basics)</p>
+                </div>
+            </div>
+            <div style="margin-top: 4rem;">
+                <h2>Volunteering</h2>
+                <div class="skill-card" style="max-width: 800px; margin: 0 auto;">
+                    <span class="icon">&#127891;</span>
+                    <h3>Event Host</h3>
+                    <p>Hosted and managed college events as an official Event Host — demonstrated strong communication, leadership, and crowd management skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-info">
+                        <h3>Medical Data Encryption for Patient Records</h3>
+                        <p>A secure system to encrypt and protect sensitive medical data for patient privacy using cryptographic algorithms in Java.</p>
+                        <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:5px;">
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Python</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Cryptography</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Security</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Healthcare</span>
+                        </div>
+                        <a href="https://github.com" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-info">
+                        <h3>YOLO v8 Car Crash Detection</h3>
+                        <p>A real-time car crash detection system using YOLOv8 deep learning model to identify accidents from video feeds for faster emergency response.</p>
+                        <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:5px;">
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Python</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">YOLOv8</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Computer Vision</span>
+                            <span style="font-size:12px; background:#eee; padding:3px 8px; border-radius:12px;">Deep Learning</span>
+                        </div>
+                        <a href="https://github.com" class="project-link">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="resume-container">
+                <div class="resume-header">
+                    <h1>Kiran B L</h1>
+                    <p>CS Student & Developer</p>
+                    <div class="contact-info">
+                        <span><span class="icon">&#9993;</span> kg7892824588@gmail.com</span>
+                        <span><span class="icon">&#128222;</span> +91 7892824588</span>
+                        <span><span class="icon">&#128205;</span> Your City, State</span>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2><span class="icon">&#128188;</span> Professional Summary</h2>
+                    <p>Results-driven developer with 5+ years of experience in full-stack web development. Proven track record of delivering high-quality solutions and leading cross-functional teams.</p>
+                </div>
+
+                <div class="resume-section">
+                    <h2><span class="icon">&#60;/&#62;</span> Technical Skills</h2>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <strong>Programming Languages:</strong> JavaScript, Python, Java, SQL
+                        </div>
+                        <div class="skill-item">
+                            <strong>Frontend:</strong> React, Vue.js, HTML5, CSS3, Tailwind CSS
+                        </div>
+                        <div class="skill-item">
+                            <strong>Backend:</strong> Node.js, Express, MongoDB, PostgreSQL, REST APIs
+                        </div>
+                        <div class="skill-item">
+                            <strong>Tools & Platforms:</strong> Git, Docker, AWS, Firebase, Figma
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2><span class="icon">&#127891;</span> Experience</h2>
+                    <div class="resume-item">
+                        <div class="resume-header-item">
+                            <h3>Senior Developer</h3>
+                            <span class="date">2021 - Present</span>
+                        </div>
+                        <p class="company">Tech Company Inc.</p>
+                        <ul>
+                            <li>Led development of microservices architecture serving 1M+ users</li>
+                            <li>Mentored junior developers and conducted code reviews</li>
+                            <li>Improved application performance by 40% through optimization</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <div class="resume-header-item">
+                            <h3>Full Stack Developer</h3>
+                            <span class="date">2019 - 2021</span>
+                        </div>
+                        <p class="company">Digital Agency Ltd.</p>
+                        <ul>
+                            <li>Developed and maintained 15+ client websites and applications</li>
+                            <li>Collaborated with designers to implement responsive designs</li>
+                            <li>Implemented automated testing reducing bugs by 35%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2><span class="icon">&#127891;</span> Education</h2>
+                    <div class="resume-item">
+                        <div class="resume-header-item">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <span class="date">Graduated 2019</span>
+                        </div>
+                        <p class="company">University Name</p>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2><span class="icon">&#127942;</span> Certifications</h2>
+                    <ul>
+                        <li>AWS Certified Solutions Architect</li>
+                        <li>Google Cloud Professional Developer</li>
+                        <li>Full Stack Web Development Certificate</li>
+                    </ul>
+                </div>
+
+                <div class="resume-actions">
+                    <button id="downloadResumeBtn" class="download-btn">
+                        <span class="icon">&#11015;</span> Download as PDF
+                    </button>
+                    <button id="printResumeBtn" class="print-btn">
+                        <span class="icon">&#128424;</span> Print
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+            <div class="contact-links">
+                <a href="mailto:kg7892824588@gmail.com" class="contact-link">
+                    <span class="icon">📧</span> kg7892824588@gmail.com
+                </a>
+                <a href="tel:+917892824588" class="contact-link">
+                    <span class="icon">📞</span> +91 7892824588
+                </a>
+                <a href="https://linkedin.com" class="contact-link">
+                    <span class="icon">in</span> LinkedIn
+                </a>
+                <a href="https://github.com" class="contact-link">
+                    <span class="icon">git</span> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
